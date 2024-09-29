@@ -1,0 +1,66 @@
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\learning.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\learning.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\learning.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\learning.AssemblyInfo.cs
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\learning.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\learning.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\learning.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\source\repos\learning\learning\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Admin\source\repos\learning\learning\bin\Debug\net8.0\appsettings.json
+C:\Users\Admin\source\repos\learning\learning\bin\Debug\net8.0\learning.exe
+C:\Users\Admin\source\repos\learning\learning\bin\Debug\net8.0\learning.deps.json
+C:\Users\Admin\source\repos\learning\learning\bin\Debug\net8.0\learning.runtimeconfig.json
+C:\Users\Admin\source\repos\learning\learning\bin\Debug\net8.0\learning.dll
+C:\Users\Admin\source\repos\learning\learning\bin\Debug\net8.0\learning.pdb
+C:\Users\Admin\source\repos\learning\learning\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Admin\source\repos\learning\learning\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Admin\source\repos\learning\learning\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Admin\source\repos\learning\learning\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\staticwebassets\msbuild.learning.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\staticwebassets\msbuild.build.learning.props
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.learning.props
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.learning.props
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\scopedcss\bundle\learning.styles.css
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\learning.csproj.Up2Date
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\learning.dll
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\refint\learning.dll
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\learning.pdb
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\learning.genruntimeconfig.cache
+C:\Users\Admin\source\repos\learning\learning\obj\Debug\net8.0\ref\learning.dll
+C:\my projects\.netcore\learning\learning\bin\Debug\net8.0\appsettings.Development.json
+C:\my projects\.netcore\learning\learning\bin\Debug\net8.0\appsettings.json
+C:\my projects\.netcore\learning\learning\bin\Debug\net8.0\learning.exe
+C:\my projects\.netcore\learning\learning\bin\Debug\net8.0\learning.deps.json
+C:\my projects\.netcore\learning\learning\bin\Debug\net8.0\learning.runtimeconfig.json
+C:\my projects\.netcore\learning\learning\bin\Debug\net8.0\learning.dll
+C:\my projects\.netcore\learning\learning\bin\Debug\net8.0\learning.pdb
+C:\my projects\.netcore\learning\learning\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\my projects\.netcore\learning\learning\bin\Debug\net8.0\MinimalApis.Extensions.dll
+C:\my projects\.netcore\learning\learning\bin\Debug\net8.0\MiniValidation.dll
+C:\my projects\.netcore\learning\learning\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\my projects\.netcore\learning\learning\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\my projects\.netcore\learning\learning\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\learning.csproj.AssemblyReference.cache
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\learning.GeneratedMSBuildEditorConfig.editorconfig
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\learning.AssemblyInfoInputs.cache
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\learning.AssemblyInfo.cs
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\learning.csproj.CoreCompileInputs.cache
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\learning.MvcApplicationPartsAssemblyInfo.cs
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\learning.MvcApplicationPartsAssemblyInfo.cache
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\staticwebassets.build.json
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\staticwebassets.development.json
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\staticwebassets\msbuild.learning.Microsoft.AspNetCore.StaticWebAssets.props
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\staticwebassets\msbuild.build.learning.props
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.learning.props
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.learning.props
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\staticwebassets.pack.json
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\scopedcss\bundle\learning.styles.css
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\learning.csproj.Up2Date
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\learning.dll
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\refint\learning.dll
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\learning.pdb
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\learning.genruntimeconfig.cache
+C:\my projects\.netcore\learning\learning\obj\Debug\net8.0\ref\learning.dll
