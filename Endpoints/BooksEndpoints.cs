@@ -1,101 +1,73 @@
-﻿using learning.Entities;
+﻿using learning.Dtos;
+using learning.Entities;
+using learning.Repositories;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace learning.Endpoints
 {
     public static class BooksEndpoints
     {
         const string GetBookEndPoint = "GetBook";
-        static List<Book> books = new List<Book>()
-        {
-            new Book()
-            {
-                Id = 1,
-                Title = "Rich dad Poor Dad",
-                Description = "Rich Dad Poor Dad is a 1997 book written by Robert T. Kiyosaki and Sharon Lechter. It advocates the importance of financial literacy (financial education), financial independence.",
-                Genre = "Economy",
-                Author = "Robert Kiyosaki",
-                imageUrl = "https://placehold.co/100",
-                ReleaseDate = new DateTime(2024,1,8),
-                Price = 100.99M
-            },
-            new Book()
-            {
-                Id = 2,
-                Title = "A Song of Ice and Fire",
-                Description = "A Game of Thrones is the first book in the A Song of Ice and Fire series by George R.R. Martin, published in 1996. The book is set in the fictional continents of Westeros and Essos, where several noble families vie for the Iron Throne of the Seven Kingdoms.",
-                Genre = "Fantasy",
-                Author = "George R. R. Martin",
-                imageUrl = "https://placehold.co/100",
-                ReleaseDate = new DateTime(2016, 8, 18),
-                Price = 89.99M
-            },
-            new Book()
-            {
-                Id = 3,
-                Title = "Alices adventures in wonderland",
-                Description = "lice's Adventures in Wonderland is an 1865 novel written by English author Charles Lutwidge Dodgson under the pseudonym Lewis Carroll. It tells of a girl named Alice falling through a rabbit hole into a fantasy world populated by peculiar, anthropomorphic creatures. The tale plays with logic, giving the story lasting popularity with adults as well as with children.",
-                Genre = "Adventure",
-                Author = "Lewis Carroll",
-                imageUrl = "https://placehold.co/100",
-                ReleaseDate = new DateTime(2012, 6, 28),
-                Price = 95
-            }
-        };
+
         public static RouteGroupBuilder MapBooksEndpoints(this IEndpointRouteBuilder routes)
         {
             var group = routes.MapGroup("/books")
                .WithParameterValidation();
 
-            group.MapGet("/", () => books);
+            group.MapGet("/", async(IBookRepository repository) => 
+            (await repository.GetAllAsync()).Select(book => book.AsDto()));
 
-            group.MapGet("/{id}", (int id) =>
+            group.MapGet("/{id}", async(IBookRepository repository,int id) =>
             {
-                Book? book = books.Find(book => book.Id == id);
-
-                if (book is null)
-                {
-                    return Results.NotFound();
-                }
-
-                return Results.Ok(book);
+                Book? book = await repository.GetAsync(id);
+                return book is not null ? Results.Ok(book.AsDto()) : Results.NotFound();
             })
             .WithName(GetBookEndPoint);
 
-            group.MapPost("/", (Book book) =>
+            group.MapPost("/",async (IBookRepository repository,CreateBookDto bookDto) =>
             {
-                book.Id = books.Max(book => book.Id) + 1;
-                books.Add(book);
-
+                Book book = new()
+                {
+                    Title = bookDto.Title,
+                    Description = bookDto.Description,
+                    Genre = bookDto.Genre,
+                    Author = bookDto.Author,
+                    imageUri = bookDto.imageUri,
+                    ReleaseDate = bookDto.ReleaseDate,
+                    Price = bookDto.Price
+                };
+                await repository.CreateAsync(book);
                 return Results.CreatedAtRoute(GetBookEndPoint, new { id = book.Id }, book);
             });
 
-            group.MapPut("/{id}", (int id, Book updatedbook) =>
+            group.MapPut("/{id}",async (IBookRepository repository, int id, UpdateBookDto updatedbookDto) =>
             {
-                Book? existingBooks = books.Find(book => book.Id == id);
+                Book? existingBooks = await repository.GetAsync(id);
 
                 if (existingBooks is null)
                 {
                     return Results.NotFound();
                 }
 
-                existingBooks.Title = updatedbook.Title;
-                existingBooks.Description = updatedbook.Description;
-                existingBooks.Genre = updatedbook.Genre;
-                existingBooks.Author = updatedbook.Author;
-                existingBooks.imageUrl = updatedbook.imageUrl;
-                existingBooks.Price = updatedbook.Price;
+                existingBooks.Title = updatedbookDto.Title;
+                existingBooks.Description = updatedbookDto.Description;
+                existingBooks.Genre = updatedbookDto.Genre;
+                existingBooks.Author = updatedbookDto.Author;
+                existingBooks.imageUri = updatedbookDto.imageUri;
+                existingBooks.Price = updatedbookDto.Price;
 
+                await repository.updateAsync(existingBooks);
                 return Results.NoContent();
 
             });
 
-            group.MapDelete("/{id}", (int id) =>
+            group.MapDelete("/{id}",async (IBookRepository repository,int id) =>
             {
-                Book? book = books.Find(book => book.Id == id);
+                Book? book = await repository.GetAsync(id);
 
                 if (book is not null)
                 {
-                    books.Remove(book);
+                    await repository.DeleteAsync(id);
                 }
 
                 return Results.NoContent();

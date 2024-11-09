@@ -23,7 +23,7 @@ namespace learning.Entities;
 
         [Url]
         [StringLength(200)]
-        public  required string imageUrl { get; set; }
+        public  required string imageUri { get; set; }
 
         public DateTime ReleaseDate{ get; set; }
 
